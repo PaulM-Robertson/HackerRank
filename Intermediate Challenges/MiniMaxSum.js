@@ -24,20 +24,17 @@ function readLine() {
 
 // Complete the miniMaxSum function below.
 function miniMaxSum(arr) {
-    let sum1=0;
+    let newArr = [];
+    let sum = 0;
     for( let i = 0; i < 5; i++ ){
-        sum1 += arr[i]-arr[0];
-        
-        
-        // sum = [
-        //     arr[i]-arr[0],
-        //     // arr[i]-arr[1],
-        //     // arr[i]-arr[2],
-        //     // arr[i]-arr[3],
-        //     // arr[i]-arr[4]
-        // ]; 
+        sum += arr[i];
     }
-    return arr;
+    newArr.push(sum-arr[0]);
+    newArr.push(sum-arr[1]);
+    newArr.push(sum-arr[2]);
+    newArr.push(sum-arr[3]);
+    newArr.push(sum-arr[4]);
+    console.log( Math.min(...newArr),Math.max(...newArr) );
 }
 
 function main() {
