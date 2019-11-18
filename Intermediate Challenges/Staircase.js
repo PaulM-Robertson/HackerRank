@@ -24,10 +24,10 @@ function readLine() {
 
 // Complete the staircase function below.
 function staircase(n) {
-    for( let r = 1; r <= n; r++ ) {
-        let blanks = [ ...[], ...Array(n-r)].map(i => ' ');
-        let hashes = [ ...[], ...Array(n-(n-r))].map(i => '#');
-        console.log([ ...blanks, ...hashes ].join(''));
+    for( let r =  1; r <= n; r++ ) {
+        let blanks = [...Array(n-r)].map( r => ' ');
+        let hashes = [...Array(n-(n-r))].map( r => '#');
+        console.log([...hashes, ...blanks].join(''));
     }
 }
     
