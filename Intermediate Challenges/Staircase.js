@@ -24,17 +24,13 @@ function readLine() {
 
 // Complete the staircase function below.
 function staircase(n) {
-    if( n > 0 && n <= 100 && typeof n === 'number' && n === parseInt( n, 0 )){
-        for( let i = 1; i < n; i++) {
-            let blanks = [ ...[], ...Array(n-1) ].map( r => ' ');
-            let hashes = [ ...[], ...Array(n-(n-1))].map( r => '#');
-            console.log([
-                ...blanks,
-                ...hashes
-            ].join(''));
-        }
+    for( let r = 1; r <= n; r++ ) {
+        let blanks = [ ...[], ...Array(n-r)].map(i => ' ');
+        let hashes = [ ...[], ...Array(n-(n-r))].map(i => '#');
+        console.log([ ...blanks, ...hashes ].join(''));
     }
-}    
+}
+    
 
 function main() {
     const n = parseInt(readLine(), 10);
