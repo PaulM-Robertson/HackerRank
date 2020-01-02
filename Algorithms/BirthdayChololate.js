@@ -24,9 +24,7 @@ function readLine() {
 
 // Complete the birthday function below.
 function birthday(s, d, m) {
-    if( s[i+(s[i]*m)] === d ) {
-        return "GOOOAAALLLL!"
-    } else return 0;
+   for (let i = 0; l = s.length; i < l; i++) 
 
 }
 
