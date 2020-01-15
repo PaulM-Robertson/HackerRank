@@ -27,7 +27,7 @@ function getTotalX(a, b) {
 // 1. find the LCM of all the integers of array A.
 // 2. find the GCD of all the integers of array B.
 // 3. Count the number of multiples of LCM that evenly divides the GCD.
-
+    
 }
 
 function main() {
