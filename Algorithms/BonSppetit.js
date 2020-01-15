@@ -5,9 +5,16 @@ function bonAppetit(bill, k, b) {
     //check if bill-k === b
     //if yes, print "bon appetit"
     //if no, print difference 
+    let total = 0;
     for (let i = 0; i < bill.length; i++) {
-        if ()
+        total += Number(bill[i]);
     }
+    if (((total - bill[k])/2) === b) {
+        console.log('Bon Appetit'); 
+    } else {
+        console.log(b - ((total - bill[k])/2)); 
+    }
+    
 
 }
 
