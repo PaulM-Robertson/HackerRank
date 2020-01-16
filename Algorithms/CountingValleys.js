@@ -1,28 +1,30 @@
 
 
 function countingValleys(n, s) {
-    let arr = s.split('');
-    let down = 0,
-        up = 0,
-        valleys = 0;
-    for (let i = 0; i < s.length; i++) {
-        if (s[i] === "D") {
-            down += 1;
-        } else {
-            up += 1;
+    let arr = s.split(''),
+        valley = 0,
+        elev = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === ("D") && elev === 0) {
+            valley += 1;
         }
+        if (arr[i] === "U") {
+            elev += 1;
+        } else {
+            elev += (-1);
+        }  
     }
-    console.log(elevation);
+    return valley;
 }
 
 (()=>{
-    let n = 24;
-    let s = 'DDUUUUUUDDDUUDDUUUDDDDUU';
-    console.log('countingvalleys(n, s)' , countingValleys(n, s))
+    let n = 8;
+    let s = 'DUUDDUUD';
+    console.log('countingValleys(n, s)' , countingValleys(n, s))
 })()
-//        /\
-//       /  \  /\ 
-//      /    \/  \
-//_    /          \    _
-// \  /            \  / 
-//  \/              \/   
+//      
+//       
+//        
+//_  /\  /\_ 
+// \/  \/             
+//                  
