@@ -1,4 +1,4 @@
-function breakingRecords(scores) {
+const breakingRecords = (scores) => {
     let maxIncrease = 0,
         minDecrease = 0,
         max = scores[0],
@@ -11,8 +11,10 @@ function breakingRecords(scores) {
 }
 
 (()=>{
-    scores = [12,13,9,5,23,3,34];
+    let scores = [12,13,9,5,23,3,34];
     console.log('breakingRecords(scores)' , breakingRecords(scores))
 })()
 
-[12,23,13]
+    let scores2 = [12,13,9,5,23,3,34];
+    console.log('breakingRecords(scores2)' , breakingRecords(scores2))
+
