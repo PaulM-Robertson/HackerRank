@@ -1,6 +1,13 @@
 // Complete the birthday function below.
 function birthday(s, d, m) {
-   for (let i = 0; l = s.length; i < l; i++) 
+   
+
 
 }
 
+(()=>{
+   let s = [1,4,2,3];
+   let d = 5;
+   let m = 2;
+   console.log( "birthday(s,d,m)", birthday(s, d. m) );
+})()
