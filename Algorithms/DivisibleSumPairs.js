@@ -1,13 +1,13 @@
 function divisibleSumPairs(n, k, ar) {
     let cocks = 0;
     for (let i = 0; i < n; i++) {
-        for (let j = 1; j <= n; j++) {
+        for (let j = (i+1); j <= n; j++) {
             let a = 0;
-            if (j > i && i != j) a = ar[i] + ar[j];
+            if (j > i) a = ar[i] + ar[j];
             if (a % k === 0) cocks++;
         }
     }
-    console.log( cocks);
+    return cocks;
 }
 
 (()=>{
