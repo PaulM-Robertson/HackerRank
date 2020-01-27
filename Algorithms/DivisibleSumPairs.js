@@ -3,7 +3,7 @@ function divisibleSumPairs(n, k, ar) {
     for (let i = 0; i < n; i++) {
         for (let j = 1; j <= n; j++) {
             let a = 0;
-            if (i > j && i != j) a = ar[i] + ar[j];
+            if (j > i && i != j) a = ar[i] + ar[j];
             if (a % k === 0) cocks++;
         }
     }
